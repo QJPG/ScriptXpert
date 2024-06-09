@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Arquivos de Origem\LUA">
+      <UniqueIdentifier>{5d9ca392-ade0-410f-aa60-207d90f6a5b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\LUA">
+      <UniqueIdentifier>{4098d884-2153-4df7-9e51-371017dbe35c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md">
@@ -29,12 +35,234 @@
     <ClCompile Include="extern\glad\src\glad.c">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Service.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InputStreamService.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ScriptServer.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lapi.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lauxlib.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lbaselib.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lcode.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lcorolib.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lctype.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\ldblib.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\ldebug.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\ldo.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\ldump.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lfunc.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lgc.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\linit.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\liolib.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\llex.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lmathlib.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lmem.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\loadlib.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lobject.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lopcodes.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\loslib.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lparser.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lstate.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lstring.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lstrlib.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\ltable.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\ltablib.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\ltm.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lundump.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lutf8lib.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lvm.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.4.6\src\lzio.c">
+      <Filter>Arquivos de Origem\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InputStreamServiceManager.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\StreamServiceManager.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\KeyboardStreamService.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\StreamService.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\AppDevice.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="extern\glad\include\glad\glad.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Service.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InputStreamService.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ScriptServer.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lapi.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lauxlib.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lcode.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lctype.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\ldebug.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\ldo.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lfunc.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lgc.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\ljumptab.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\llex.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\llimits.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lmem.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lobject.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lopcodes.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lopnames.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lparser.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lprefix.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lstate.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lstring.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\ltable.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\ltm.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lua.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lua.hpp">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\luaconf.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lualib.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lundump.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lvm.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.4.6\src\lzio.h">
+      <Filter>Arquivos de Cabeçalho\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InputStreamServiceManager.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\StreamServiceManager.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\KeyboardStreamService.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\StreamService.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>

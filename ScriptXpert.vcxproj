@@ -102,10 +102,10 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);LUA_COMPAT_5_3</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>D:\aliss\source\repos\ScriptXpert\extern\SDL2-2.30.3\include;D:\aliss\source\repos\ScriptXpert\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\aliss\source\repos\ScriptXpert\extern\SDL2-2.30.3\include;D:\aliss\source\repos\ScriptXpert\extern\glad\include;D:\aliss\source\repos\ScriptXpert\lua-5.4.6\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -120,10 +120,10 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);LUA_COMPAT_5_3</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>D:\aliss\source\repos\ScriptXpert\extern\SDL2-2.30.3\include;D:\aliss\source\repos\ScriptXpert\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\aliss\source\repos\ScriptXpert\extern\SDL2-2.30.3\include;D:\aliss\source\repos\ScriptXpert\extern\glad\include;D:\aliss\source\repos\ScriptXpert\lua-5.4.6\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,12 +139,86 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="extern\glad\src\glad.c" />
+    <ClCompile Include="lua-5.4.6\src\lapi.c" />
+    <ClCompile Include="lua-5.4.6\src\lauxlib.c" />
+    <ClCompile Include="lua-5.4.6\src\lbaselib.c" />
+    <ClCompile Include="lua-5.4.6\src\lcode.c" />
+    <ClCompile Include="lua-5.4.6\src\lcorolib.c" />
+    <ClCompile Include="lua-5.4.6\src\lctype.c" />
+    <ClCompile Include="lua-5.4.6\src\ldblib.c" />
+    <ClCompile Include="lua-5.4.6\src\ldebug.c" />
+    <ClCompile Include="lua-5.4.6\src\ldo.c" />
+    <ClCompile Include="lua-5.4.6\src\ldump.c" />
+    <ClCompile Include="lua-5.4.6\src\lfunc.c" />
+    <ClCompile Include="lua-5.4.6\src\lgc.c" />
+    <ClCompile Include="lua-5.4.6\src\linit.c" />
+    <ClCompile Include="lua-5.4.6\src\liolib.c" />
+    <ClCompile Include="lua-5.4.6\src\llex.c" />
+    <ClCompile Include="lua-5.4.6\src\lmathlib.c" />
+    <ClCompile Include="lua-5.4.6\src\lmem.c" />
+    <ClCompile Include="lua-5.4.6\src\loadlib.c" />
+    <ClCompile Include="lua-5.4.6\src\lobject.c" />
+    <ClCompile Include="lua-5.4.6\src\lopcodes.c" />
+    <ClCompile Include="lua-5.4.6\src\loslib.c" />
+    <ClCompile Include="lua-5.4.6\src\lparser.c" />
+    <ClCompile Include="lua-5.4.6\src\lstate.c" />
+    <ClCompile Include="lua-5.4.6\src\lstring.c" />
+    <ClCompile Include="lua-5.4.6\src\lstrlib.c" />
+    <ClCompile Include="lua-5.4.6\src\ltable.c" />
+    <ClCompile Include="lua-5.4.6\src\ltablib.c" />
+    <ClCompile Include="lua-5.4.6\src\ltm.c" />
+    <ClCompile Include="lua-5.4.6\src\lundump.c" />
+    <ClCompile Include="lua-5.4.6\src\lutf8lib.c" />
+    <ClCompile Include="lua-5.4.6\src\lvm.c" />
+    <ClCompile Include="lua-5.4.6\src\lzio.c" />
     <ClCompile Include="Source\AppDevice.cpp" />
+    <ClCompile Include="Source\InputStreamService.cpp" />
+    <ClCompile Include="Source\KeyboardStreamService.cpp" />
     <ClCompile Include="Source\run.cpp" />
+    <ClCompile Include="Source\ScriptServer.cpp" />
+    <ClCompile Include="Source\Service.cpp" />
+    <ClCompile Include="Source\InputStreamServiceManager.cpp" />
+    <ClCompile Include="Source\StreamService.cpp" />
+    <ClCompile Include="Source\StreamServiceManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="extern\glad\include\glad\glad.h" />
+    <ClInclude Include="lua-5.4.6\src\lapi.h" />
+    <ClInclude Include="lua-5.4.6\src\lauxlib.h" />
+    <ClInclude Include="lua-5.4.6\src\lcode.h" />
+    <ClInclude Include="lua-5.4.6\src\lctype.h" />
+    <ClInclude Include="lua-5.4.6\src\ldebug.h" />
+    <ClInclude Include="lua-5.4.6\src\ldo.h" />
+    <ClInclude Include="lua-5.4.6\src\lfunc.h" />
+    <ClInclude Include="lua-5.4.6\src\lgc.h" />
+    <ClInclude Include="lua-5.4.6\src\ljumptab.h" />
+    <ClInclude Include="lua-5.4.6\src\llex.h" />
+    <ClInclude Include="lua-5.4.6\src\llimits.h" />
+    <ClInclude Include="lua-5.4.6\src\lmem.h" />
+    <ClInclude Include="lua-5.4.6\src\lobject.h" />
+    <ClInclude Include="lua-5.4.6\src\lopcodes.h" />
+    <ClInclude Include="lua-5.4.6\src\lopnames.h" />
+    <ClInclude Include="lua-5.4.6\src\lparser.h" />
+    <ClInclude Include="lua-5.4.6\src\lprefix.h" />
+    <ClInclude Include="lua-5.4.6\src\lstate.h" />
+    <ClInclude Include="lua-5.4.6\src\lstring.h" />
+    <ClInclude Include="lua-5.4.6\src\ltable.h" />
+    <ClInclude Include="lua-5.4.6\src\ltm.h" />
+    <ClInclude Include="lua-5.4.6\src\lua.h" />
+    <ClInclude Include="lua-5.4.6\src\lua.hpp" />
+    <ClInclude Include="lua-5.4.6\src\luaconf.h" />
+    <ClInclude Include="lua-5.4.6\src\lualib.h" />
+    <ClInclude Include="lua-5.4.6\src\lundump.h" />
+    <ClInclude Include="lua-5.4.6\src\lvm.h" />
+    <ClInclude Include="lua-5.4.6\src\lzio.h" />
     <ClInclude Include="Source\AppDevice.h" />
+    <ClInclude Include="Source\InputStreamService.h" />
+    <ClInclude Include="Source\KeyboardStreamService.h" />
+    <ClInclude Include="Source\ScriptServer.h" />
+    <ClInclude Include="Source\Service.h" />
+    <ClInclude Include="Source\InputStreamServiceManager.h" />
+    <ClInclude Include="Source\StreamService.h" />
+    <ClInclude Include="Source\StreamServiceManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
