@@ -171,15 +171,10 @@
     <ClCompile Include="lua-5.4.6\src\lutf8lib.c" />
     <ClCompile Include="lua-5.4.6\src\lvm.c" />
     <ClCompile Include="lua-5.4.6\src\lzio.c" />
-    <ClCompile Include="Source\AppDevice.cpp" />
-    <ClCompile Include="Source\InputStreamService.cpp" />
-    <ClCompile Include="Source\KeyboardStreamService.cpp" />
+    <ClCompile Include="Source\DeviceTarget.cpp" />
+    <ClCompile Include="Source\Program.cpp" />
+    <ClCompile Include="Source\ProgramAdapter.cpp" />
     <ClCompile Include="Source\run.cpp" />
-    <ClCompile Include="Source\ScriptServer.cpp" />
-    <ClCompile Include="Source\Service.cpp" />
-    <ClCompile Include="Source\InputStreamServiceManager.cpp" />
-    <ClCompile Include="Source\StreamService.cpp" />
-    <ClCompile Include="Source\StreamServiceManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="extern\glad\include\glad\glad.h" />
@@ -211,14 +206,9 @@
     <ClInclude Include="lua-5.4.6\src\lundump.h" />
     <ClInclude Include="lua-5.4.6\src\lvm.h" />
     <ClInclude Include="lua-5.4.6\src\lzio.h" />
-    <ClInclude Include="Source\AppDevice.h" />
-    <ClInclude Include="Source\InputStreamService.h" />
-    <ClInclude Include="Source\KeyboardStreamService.h" />
-    <ClInclude Include="Source\ScriptServer.h" />
-    <ClInclude Include="Source\Service.h" />
-    <ClInclude Include="Source\InputStreamServiceManager.h" />
-    <ClInclude Include="Source\StreamService.h" />
-    <ClInclude Include="Source\StreamServiceManager.h" />
+    <ClInclude Include="Source\DeviceTarget.h" />
+    <ClInclude Include="Source\Program.h" />
+    <ClInclude Include="Source\ProgramAdapter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

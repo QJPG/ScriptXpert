@@ -29,19 +29,10 @@
     <ClCompile Include="Source\run.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Source\AppDevice.cpp">
+    <ClCompile Include="Source\DeviceTarget.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="extern\glad\src\glad.c">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Service.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\InputStreamService.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\ScriptServer.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="lua-5.4.6\src\lapi.c">
@@ -140,33 +131,18 @@
     <ClCompile Include="lua-5.4.6\src\lzio.c">
       <Filter>Arquivos de Origem\LUA</Filter>
     </ClCompile>
-    <ClCompile Include="Source\InputStreamServiceManager.cpp">
+    <ClCompile Include="Source\Program.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Source\StreamServiceManager.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\KeyboardStreamService.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\StreamService.cpp">
+    <ClCompile Include="Source\ProgramAdapter.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\AppDevice.h">
+    <ClInclude Include="Source\DeviceTarget.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="extern\glad\include\glad\glad.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Service.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\InputStreamService.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\ScriptServer.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="lua-5.4.6\src\lapi.h">
@@ -253,16 +229,10 @@
     <ClInclude Include="lua-5.4.6\src\lzio.h">
       <Filter>Arquivos de Cabeçalho\LUA</Filter>
     </ClInclude>
-    <ClInclude Include="Source\InputStreamServiceManager.h">
+    <ClInclude Include="Source\Program.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="Source\StreamServiceManager.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\KeyboardStreamService.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\StreamService.h">
+    <ClInclude Include="Source\ProgramAdapter.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>
