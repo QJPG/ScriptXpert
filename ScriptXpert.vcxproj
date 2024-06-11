@@ -172,6 +172,7 @@
     <ClCompile Include="lua-5.4.6\src\lvm.c" />
     <ClCompile Include="lua-5.4.6\src\lzio.c" />
     <ClCompile Include="Source\DeviceTarget.cpp" />
+    <ClCompile Include="Source\GraphicsAdapter.cpp" />
     <ClCompile Include="Source\Program.cpp" />
     <ClCompile Include="Source\ProgramAdapter.cpp" />
     <ClCompile Include="Source\run.cpp" />
@@ -207,6 +208,7 @@
     <ClInclude Include="lua-5.4.6\src\lvm.h" />
     <ClInclude Include="lua-5.4.6\src\lzio.h" />
     <ClInclude Include="Source\DeviceTarget.h" />
+    <ClInclude Include="Source\GraphicsAdapter.h" />
     <ClInclude Include="Source\Program.h" />
     <ClInclude Include="Source\ProgramAdapter.h" />
   </ItemGroup>

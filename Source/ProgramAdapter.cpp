@@ -3,6 +3,9 @@
 void ProgramAdapter::setLuaState(lua_State* L)
 {
 	LA = L;
+
+	_bindLuaGlobals();
+	_bindLuaFunctions();
 }
 
 void ProgramAdapter::callLuaFunction(const char* func_name, unsigned int argc, unsigned int argr)

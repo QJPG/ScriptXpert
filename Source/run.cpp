@@ -8,7 +8,7 @@ int main(int argc, const char * argv[]) {
 	}*/
 
 	Program program;
-	program.setup();
+	program.setup(argc, argv);
 
 	return 0;
 }

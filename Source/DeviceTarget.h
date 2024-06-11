@@ -2,6 +2,8 @@
 
 #include <vector>
 #include <memory>
+#include <map>
+
 #include <SDL.h>
 #undef main
 
@@ -35,8 +37,6 @@ public:
 
 	void run();
 	void showOSMessage(Uint32 MSGSTATUS, CSTR message, CSTR title = "ScriptXpert");
-	void bindLuaGlobals() override;
-	void bindLuaFunctions() override;
 
 private:
 	/*
@@ -61,16 +61,35 @@ private:
 	static int _L_GETDELTATIME(lua_State* L);
 	*/
 
-	uint32_t window_SizeX;
-	uint32_t window_SizeY;
-	uint32_t window_FramesPerSecond;
-	uint32_t window_OpenGLMaxVersion;
-	uint32_t window_OpenGLMinVersion;
-	CSTR window_Title;
-	double window_DeltaTime = 0.f;
+	struct DT_Informer {
+		uint32_t DT_WSx;
+		uint32_t DT_WSy;
+		uint32_t DT_FPS;
+		uint32_t DT_GLMAXv;
+		uint32_t DT_GLMINv;
+		CSTR DT_Title;
+		double DT_DeltaTick;
+		std::map<int, bool> DT_KMAP;
+		bool DT_Abort = false;
+		SDL_Color DT_CLEAR {0, 0, 0, 255};
+		int DT_VSync = -1;
+	};
+
+	DT_Informer* ptr_DT_informer;
+
+	//uint32_t window_SizeX;
+	//uint32_t window_SizeY;
+	//uint32_t window_FramesPerSecond;
+	//uint32_t window_OpenGLMaxVersion;
+	//uint32_t window_OpenGLMinVersion;
+	//CSTR window_Title;
+	//double window_DeltaTime = 0.f;
+	
 	SDL_Window* ptr_SDL_window = NULL;
 	SDL_Event* ptr_SDL_event;
 	SDL_GLContext SDL_GL_context = 0;
+	
+	//static std::map<int, bool> KEYSMAPPED;
 
 	void _start();
 	void _input_event();
@@ -78,6 +97,14 @@ private:
 	void _process_draw();
 	void _exit();
 
+	void _bindLuaGlobals() override;
+	void _bindLuaFunctions() override;
+
 	static int L_EVENTGETTYPE(lua_State* L);
+	static int L_EVENTGETKEYCODE(lua_State* L);
+	static int L_EVENTGETKEYSCANCODE(lua_State* L); /*https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf -> page 0x07*/
+	static int L_EVENTGETKEYMOD(lua_State* L);
+	
+	static int L_GETKEYSMAPPED(lua_State* L);
 
 };

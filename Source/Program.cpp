@@ -3,29 +3,38 @@
 Program::Program()
 {
 	device = new DeviceTarget();
+	graphics = new GraphicsAdapter();
 }
 
 Program::~Program()
 {
+	delete graphics;
 	delete device;
 
 	lua_close(LState);
 }
 
-void Program::setup()
+void Program::setup(int argc, const char* argv[])
 {
+	const char* script_filename = "";
+
+	for (int i = 1; i < argc; i++) {
+		if (strcmp(argv[i], "S") == 0) script_filename = argv[i + 1];
+	}
+
 	LState = luaL_newstate();
 
 	if (!LState) return;
 
 	luaL_openlibs(LState);
 
-	device->setLuaState(LState);
-
 	bindNativeGlobals();
 	bindNativeFunctions();
 
-	if (luaL_dofile(LState, "x64\\Debug\\script.lua") != LUA_OK) {
+	device->setLuaState(LState);
+	graphics->setLuaState(LState);
+
+	if (luaL_dofile(LState, script_filename) != LUA_OK) {
 		std::cerr << lua_tostring(LState, -1) << std::endl;
 
 		lua_pop(LState, 1);
@@ -37,14 +46,15 @@ void Program::setup()
 
 void Program::bindNativeGlobals()
 {
-	device->bindLuaGlobals();
+	//device->bindLuaGlobals();
 }
 
 void Program::bindNativeFunctions()
 {
-	lua_register(LState, "free", L_FREEADAPTER);
+	lua_register(LState, "free", L_FREEPTR);
+	lua_register(LState, "freeadapter", L_FREEADAPTER);
 
-	device->bindLuaFunctions();
+	//device->bindLuaFunctions();
 }
 
 void Program::LUAPUSHMEMADDR(lua_State* L, uintptr_t& ptr_addr)
@@ -63,6 +73,13 @@ void Program::LUAPUSHMEMADDR(lua_State* L, uintptr_t& ptr_addr)
 
 	return 1;
 }*/
+
+int Program::L_FREEPTR(lua_State* L)
+{
+	delete lua_touserdata(L, 1);
+
+	return 0;
+}
 
 int Program::L_FREEADAPTER(lua_State* L)
 {
